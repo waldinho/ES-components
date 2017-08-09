@@ -1,0 +1,37 @@
+//**
+// Title row
+//**
+#title-row {
+    display: table;
+    width: 1000px;
+    .grey-block {
+        opacity: 0.04;
+        background: #000000;
+        width: 450px;
+        height: 12px;
+        margin: 35px 0px;
+    }
+    .title {
+        display: table-cell;
+        vertical-align: middle;
+        min-width: 100px;
+        padding: 0 0 0 10px;
+        height: 60px;
+        h2 {
+            font-size: 28px;
+            font-family: $system-font-stack;
+            margin: 0 0 32px 0;
+        }
+        h2:after {
+            background: none repeat scroll 0 0 #F5A623;
+            bottom: -10px;
+            content: "";
+            display: block;
+            height: 12px;
+            position: relative;
+            width: 65px;
+            margin: -32px 10px 0 10px;
+            z-index: -99999;
+        }
+    }
+}
