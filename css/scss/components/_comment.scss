@@ -69,18 +69,22 @@
                 height: 12px;
                 position: relative;
                 width: 65px;
-                margin: -32px 10px 0 10px;
+                margin: -32px 10px 10px 10px;
                 z-index: 0;
      }
 
     p {
         font-size: 24px;
-        padding: 0px 700px 23px 55px;
+        padding: 2px 700px 23px 55px;
         font-weight: bold;
         margin-top: -4px;
 
 
     }
+
+   .img img{
+    float: left;
+   } 
 }
 
 
