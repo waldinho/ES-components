@@ -45,7 +45,11 @@
     width: 1000px;
     height: 250px;
     z-index: 99999;
-    background-color: #fafafa;
+    background:#f0f0f0;
+    width:700px;
+    height:250px;
+    margin: 0px 20px 0px 50px;
+    z-index:-2;
     h1 {
         font-size: 13px;
         padding: 40px 50px 0px 55px;
@@ -77,4 +81,9 @@
         font-weight: bold;
         width: 300px
     }
+    .img img{
+    float: right;
+    padding: 0px -800px 50px 500px;
+   } 
+
 }
