@@ -35,18 +35,17 @@
 //         }
 //     }
 // }
+// #comment {
+//     width: 1000px;
+//     height: 250px;
+//     background-color: #fafafa;
+//     z-index: -1;
+// }
 #comment {
     width: 1000px;
     height: 250px;
-    background-color: #fafafa;
-    z-index: -1;
-}
-
-#over {
-    width: 1000px;
-    height: 250px;
-    margin-top: -250px;
     z-index: 99999;
+    background-color: #fafafa;
     h1 {
         font-size: 13px;
         padding: 40px 50px 0px 55px;
