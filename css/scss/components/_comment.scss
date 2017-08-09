@@ -35,57 +35,46 @@
 //         }
 //     }
 // }
-
+// #comment {
+//     width: 1000px;
+//     height: 250px;
+//     background-color: #fafafa;
+//     z-index: -1;
+// }
 #comment {
-    background:#f0f0f0;
-    width:1000px;
-    height:250px;
-    margin: 0px 20px 0px 50px;
-    z-index:-2;
-
-
+    width: 1000px;
+    height: 250px;
+    z-index: 99999;
+    background-color: #fafafa;
     h1 {
         font-size: 13px;
         padding: 40px 50px 0px 55px;
         color: #565856;
         font-weight: bold;
     }
-
-
-    h2 {
-        margin: -20px 50px 0px 0px;
-        padding: 0px 60px 0px 55px;
-        font-size: 30px;
-        font-family: "Sanomat Sans";
-        font-weight: thin;
-        z-index:99999;
-    }
-
-     h2:after{
+    .yellow-strip {
         background: none repeat scroll 0 0 #F5A623;
-                bottom: -10px;
-                content:"";
-                display: block;
-                height: 12px;
-                position: relative;
-                width: 65px;
-                margin: -32px 10px 10px 10px;
-                z-index: 0;
-     }
-
+        content: "";
+        display: block;
+        height: 22px;
+        position: relative;
+        width: 195px;
+        margin: 0 10px 0 60px;
+        z-index: 0;
+        h2 {
+            font-size: 28px;
+            font-family: $system-font-stack;
+            position: relative;
+            z-index: 1;
+            top: -14px;
+            left: -7px;
+        }
+    }
     p {
         font-size: 24px;
-        padding: 2px 700px 23px 55px;
+        line-height: 32px;
+        margin: 10px 10px 0 55px;
         font-weight: bold;
-        margin-top: -4px;
-
-
+        width: 300px
     }
-
-   .img img{
-    float: left;
-   } 
 }
-
-
-
