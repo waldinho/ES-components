@@ -1,18 +1,19 @@
 //**
 // Responsive Styles
 //**
+@include responsive($big-break) {}
 
-@include responsive($big-break) {
-  // e.g. iPad, tablets, small browsers
+@include responsive($medium-break) {
+    body {
+        overflow-x: hidden;
+        #four-articles .article .last {
+            margin: 0 20px 10px 0 !important;
+        }
+    }
 }
 
-
-
-
-
 @include responsive($small-break) {
-  // e.g. iPhone, mobile
-  body {
-    overflow-x: hidden;
-  }
+    body {
+        overflow-x: hidden;
+    }
 }

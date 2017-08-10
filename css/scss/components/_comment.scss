@@ -3,7 +3,6 @@
 // **
 #comment {
     width: 1000px;
-    height: 300px;
     z-index: 99999;
     background-color: #fafafa;
     h1 {
@@ -37,10 +36,10 @@
         font-weight: bold;
         width: 300px
     }
-    .text {
-        float: left;
-    }
     .img {
-        float: right;
+        line-height: 0;
+        background: url(../../img/comment-img.png) center center no-repeat;
+        width: 456px;
+        height: 283px;
     }
 }
