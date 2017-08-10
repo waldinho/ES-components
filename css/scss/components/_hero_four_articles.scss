@@ -3,15 +3,43 @@
 //**
 #hero-four-articles {
     .hero {
-        height: 158px;
         width: 480px;
-        background: red;
         margin: 0 20px 10px 0;
+        img {
+            max-width: 480px;
+        }
+        .blue-strip {
+            background: none repeat scroll 0 0 #33B2CE;
+            content: "";
+            display: block;
+            height: 83px;
+            position: relative;
+            width: 480px;
+            margin: -81px 10px 0 10px;
+            z-index: 0;
+            mix-blend-mode: multiply;
+        }
+        h2 {
+            font-size: 32px;
+            font-family: $system-font-stack;
+            font-weight: 500;
+            position: relative;
+            color: #fff;
+            z-index: 1;
+            top: -14px;
+            left: 7px;
+            opacity: 1;
+            margin: -75px 10px 0 10px;
+            height: 95px;
+            letter-spacing: 0.22px;
+            line-height: 35px;
+            text-shadow: 0 0 14px #000000;
+        }
     }
     .article {
         font-family: $system-font-stack;
         width: 500px;
-        margin: 0 0 20px 0;
+        height: 110px;
         .last {
             margin: 0 0 10px 0 !important;
         }
