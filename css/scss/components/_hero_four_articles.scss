@@ -1,0 +1,29 @@
+//**
+// Title row
+//**
+#hero-four-articles {
+    .hero {
+        height: 158px;
+        width: 480px;
+        background: red;
+        margin: 0 20px 10px 0;
+    }
+    .article {
+        font-family: $system-font-stack;
+        width: 500px;
+        margin: 0 0 20px 0;
+        .last {
+            margin: 0 0 10px 0 !important;
+        }
+        .section {
+            font-size: 14px;
+            letter-spacing: 0.3px;
+        }
+        .headline {
+            font-size: 20px;
+            letter-spacing: 0.14px;
+            line-height: 24px;
+            margin: 0 20px 0 0;
+        }
+    }
+}

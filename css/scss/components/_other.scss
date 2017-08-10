@@ -1,55 +1,81 @@
 //**
 // Other Useful Reusable Styles
 //**
-
 * {
-  box-sizing: border-box !important;
+    box-sizing: border-box !important;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .text-right {
-  text-align: right;
+    text-align: right;
 }
 
 .text-left {
-  text-align: left;
+    text-align: left;
 }
 
 .clear {
-  clear: both;
+    clear: both;
 }
 
 .right {
-  float: right;
+    float: right;
 }
 
 .left {
-  float: left;
+    float: left;
 }
 
 .list-unstyled {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .valign {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 hr {
-  border: 0;
-  border-bottom: 1px solid #ddd;
-  margin: $padding 0;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    margin: $padding 0;
 }
 
 .subtle {
-  color: $subtle-color;
+    color: $subtle-color;
 }
 
 .relative {
-  position: relative;
+    position: relative;
+}
+
+.img-gradient {
+    width: 100px;
+    height: 283px;
+    background: #fafafa;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
+}
+
+.section {
+    text-transform: uppercase;
+    opacity: 0.3;
+    font-family: "Sanomat Sans";
+    font-weight: bold;
+    color: #000000;
+}
+
+.headline {
+    font-family: "Sanomat Sans";
+    color: #3A3A3A;
 }
