@@ -35,3 +35,12 @@
         }
     }
 }
+
+@include responsive($small-break) {
+    #title-row {
+        width: 480px;
+        .grey-block {
+            width: 190px;
+        }
+    }
+}
