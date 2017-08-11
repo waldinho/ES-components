@@ -55,3 +55,11 @@
         }
     }
 }
+
+@include responsive($small-break) {
+    #hero-five-articles {
+        .left-mob {
+            padding-bottom: 20px;
+        }
+    }
+}
