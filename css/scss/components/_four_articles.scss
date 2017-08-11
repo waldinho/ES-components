@@ -7,10 +7,9 @@
         font-family: $system-font-stack;
         width: 250px;
         margin: 0 0 20px 0;
-        .img {
-            height: 158px;
-            background: red;
-            margin: 0 20px 10px 0;
+        img {
+            margin: 0 0 10px 0;
+            width: 235px;
         }
         .last {
             margin: 0 0 10px 0 !important;
@@ -24,6 +23,21 @@
             letter-spacing: 0.17px;
             line-height: 22px;
             margin: 0 20px 0 0;
+        }
+    }
+}
+
+@include responsive($small-break) {
+    #four-articles {
+        width: 480px;
+        .article {
+            width: 235px;
+            margin: 0 10px 20px 0;
+        }
+        .even,
+        .last {
+            margin: 0 0 20px 0;
+            width: 235px;
         }
     }
 }
