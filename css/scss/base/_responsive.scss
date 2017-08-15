@@ -3,12 +3,9 @@
 //**
 @include responsive($big-break) {}
 
-@include responsive($medium-break) {
-    body {
-        overflow-x: hidden;
-        #four-articles .article .last {
-            margin: 0 20px 10px 0 !important;
-        }
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    .container {
+        max-width: 780px;
     }
 }
 

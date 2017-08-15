@@ -4,6 +4,7 @@
 #title-row {
     display: table;
     width: 1000px;
+    margin-top: -35px;
     .grey-block {
         opacity: 0.04;
         background: #000000;
@@ -32,6 +33,15 @@
             width: 65px;
             margin: -32px 10px 0 10px;
             z-index: -99999;
+        }
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    #title-row {
+        width: 720px;
+        .grey-block {
+            width: 314px;
         }
     }
 }
