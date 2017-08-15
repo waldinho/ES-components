@@ -1,7 +1,7 @@
 {
     "name": "ES-redesign",
     "version": "0.1.0",
-    "author": "Lee Munroe",
+    "author": "James Waller",
     "devDependencies": {
         "autoprefixer-core": "^5.2.1",
         "grunt": "^0.4.5",
