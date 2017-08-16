@@ -9,7 +9,7 @@
             max-width: 480px;
         }
         .blue-strip {
-            background: none repeat scroll 0 0 #E35039;
+            background: none repeat scroll 0 0 $red;
             content: "";
             display: block;
             height: 83px;
@@ -24,7 +24,7 @@
             font-family: $system-font-stack;
             font-weight: 500;
             position: relative;
-            color: #fff;
+            color: $white;
             z-index: 1;
             top: -14px;
             left: 7px;
@@ -33,7 +33,7 @@
             height: 95px;
             letter-spacing: 0.22px;
             line-height: 35px;
-            text-shadow: 0 0 14px #000000;
+            text-shadow: 0 0 14px $black;
         }
     }
     .article {

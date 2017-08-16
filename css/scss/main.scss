@@ -2,8 +2,18 @@
 @import "../../node_modules/normalize-scss/sass/_normalize.scss";
 // Install FontAwesome for useful icons
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
-// Import fonts from Google
+// Import fonts
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:400,700);
+@font-face {
+    font-family: 'Sanomat';
+    src: url('../../../fonts/Sanomat/Sanomat OTF/Sanomat-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Sanomat Sans';
+    src: url('../../../fonts/Sanomat Sans/Sanomat Sans OTF/Sanomat Sans-Regular.otf');
+}
+
 // Set variables and reusable mixins
 @import "base/config";
 @import "base/mixins";
@@ -20,6 +30,7 @@
 @import "components/four_articles";
 @import "components/hero_four_articles";
 @import "components/hero_five_articles";
+@import "components/hero_one_dmpu";
 // Specific project styles, add any section specific sass modules here
 @import "pages/layout";
 @import "pages/home";

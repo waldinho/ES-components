@@ -1,0 +1,150 @@
+//**
+// Hero with dmpu
+//**
+#hero-one-dmpu {
+    margin: 0 0 20px 0;
+    .hero {
+        .section-italic {
+            font-family: Publico-Medium;
+            font-size: 14px;
+            color: $white;
+            letter-spacing: 0.26px;
+            text-shadow: 0 0 4px $black;
+            font-style: italic;
+            margin: -145px 10px 0 30px;
+        }
+        .blue-strip {
+            background: none repeat scroll 0 0 $blue;
+            content: "";
+            display: block;
+            height: 115px;
+            position: relative;
+            width: 480px;
+            margin: 10px 10px 0 10px;
+            z-index: 0;
+            mix-blend-mode: multiply;
+        }
+        h2 {
+            font-size: 34px;
+            font-family: $system-font-stack;
+            font-weight: 500;
+            position: relative;
+            color: $white;
+            z-index: 1;
+            top: -14px;
+            left: 7px;
+            opacity: 1;
+            margin: -105px 10px 0 20px;
+            height: 125px;
+            letter-spacing: 0.22px;
+            line-height: 36px;
+            text-shadow: 0 0 14px $black;
+            width: 440px;
+        }
+        img {
+            max-width: 480px
+        }
+        p {
+            font-family: "Sanomat Sans";
+            font-size: 23px;
+            color: #281E1E;
+            letter-spacing: 0.25px;
+            line-height: 28px;
+            max-width: 480px;
+        }
+    }
+    .dmpu {
+        width: 480px
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1023px) {
+    #hero-one-dmpu {
+        width: 780px;
+        .hero {
+            width: 400px;
+            .section-italic {
+                color: $black;
+                letter-spacing: 0.26px;
+                text-shadow: none;
+                margin: 15px 10px 0 10px;
+            }
+            img {
+                max-width: 400px;
+            }
+            .blue-strip {
+                width: 400px;
+                margin: -85px 10px 0 10px;
+                height: 50px;
+            }
+            h2 {
+                font-size: 34px;
+                color: $black;
+                left: 0px;
+                margin: 60px 10px 0 10px;
+                letter-spacing: 0.22px;
+                line-height: 36px;
+                text-shadow: none;
+                height: 110px;
+                width: 400px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 1.15;
+                letter-spacing: 0.3px;
+                color: #3a3a3a;
+                line-height: 23px;
+                margin: 0 10px;
+            }
+        }
+        .dmpu {
+            float: left;
+            width: 340px;
+        }
+    }
+}
+
+@media screen and (min-device-width: 1024px) {
+    #hero-one-dmpu {
+        width: 1000px;
+        .hero {
+            width: 660px;
+            .section-italic {
+                color: $white;
+                letter-spacing: 0.26px;
+                text-shadow: none;
+                margin: -140px 10px 0 30px;
+            }
+            img {
+                max-width: 660px;
+            }
+            .blue-strip {
+                width: 660px;
+                margin: 10px 10px 0 10px;
+                height: 250px;
+            }
+            h2 {
+                font-size: 48px;
+                color: $white;
+                left: 0px;
+                margin: -240px 10px 0 30px;
+                letter-spacing: 0.22px;
+                line-height: 48px;
+                text-shadow: 0 3px 6px rgba(0, 0, 0, 0.50);
+                width: 600px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 1.15;
+                letter-spacing: 0.3px;
+                color: #ffffff;
+                line-height: 23px;
+                margin: 10px 30px;
+            }
+        }
+        .dmpu {
+            float: left;
+            width: 340px;
+        }
+    }
+}
