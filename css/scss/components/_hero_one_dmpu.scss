@@ -114,6 +114,7 @@
                 letter-spacing: 0.26px;
                 text-shadow: none;
                 margin: -140px 10px 0 30px;
+                text-shadow: 0 0 4px $black;
             }
             img {
                 max-width: 660px;
@@ -121,25 +122,32 @@
             .blue-strip {
                 width: 660px;
                 margin: 10px 10px 0 10px;
-                height: 250px;
+                height: 150px;
             }
             h2 {
                 font-size: 48px;
                 color: $white;
                 left: 0px;
-                margin: -240px 10px 0 30px;
+                margin: -140px 10px 0 30px;
                 letter-spacing: 0.22px;
                 line-height: 48px;
                 text-shadow: 0 3px 6px rgba(0, 0, 0, 0.50);
                 width: 600px;
             }
+            .background-blue {
+                background: $blue;
+                width: 660px;
+                margin: 15px 0 20px 10px;
+                padding: 5px 10px;
+            }
             p {
                 font-size: 20px;
                 line-height: 1.15;
                 letter-spacing: 0.3px;
-                color: #ffffff;
                 line-height: 23px;
-                margin: 10px 30px;
+                margin: 0 20px 20px 10px;
+                color: $white;
+                max-width: 600px;
             }
         }
         .dmpu {

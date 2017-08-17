@@ -1,0 +1,171 @@
+//**
+// Hero with dmpu
+//**
+#three-articles-dmpu {
+    margin: 0 0 20px 0;
+    width: 480px;
+    .hero {
+        .section {
+            opacity: 0.3;
+            font-size: 14px;
+            color: #000000;
+            letter-spacing: 0.26px;
+            text-transform: uppercase;
+            margin: -5px 0 0 5px;
+            font-weight: 600;
+            float: left;
+        }
+        .yellow-strip {
+            background: none repeat scroll 0 0 $yellow;
+            content: "";
+            display: block;
+            height: 40px;
+            position: relative;
+            width: 480px;
+            margin: -96px 10px 0 10px;
+            z-index: 0;
+            mix-blend-mode: multiply;
+        }
+        h2 {
+            font-family: "Sanomat Sans";
+            font-size: 34px;
+            color: #3A3A3A;
+            letter-spacing: 0.2px;
+            line-height: 37px;
+            margin: 56px 20px 20px 0;
+        }
+        img {
+            width: 480px;
+            padding-bottom: 20px;
+        }
+        .camera {
+            margin: 10px 10px 0 0;
+            img {
+                width: 12px;
+                float: left;
+            }
+        }
+    }
+    .article {
+        width: 240px;
+        .section {
+            opacity: 0.3;
+            font-size: 14px;
+            color: #000000;
+            letter-spacing: 0.26px;
+            text-transform: uppercase;
+            margin: -5px 0 0 0;
+            font-weight: 600;
+            float: left;
+        }
+        .yellow-strip {
+            background: none repeat scroll 0 0 $yellow;
+            content: "";
+            display: block;
+            height: 40px;
+            position: relative;
+            width: 230px;
+            margin: -68px 0 0 5px;
+            z-index: 0;
+            mix-blend-mode: multiply;
+        }
+        h2 {
+            font-family: "Sanomat Sans";
+            font-size: 20px;
+            color: #3A3A3A;
+            letter-spacing: 0.2px;
+            line-height: 23px;
+            margin: 35px 5px 20px 0;
+        }
+        img {
+            width: 230px;
+        }
+        .height-180 {
+            height: 180px;
+        }
+        .camera {
+            margin: 10px 10px 0 0;
+            img {
+                width: 12px;
+                float: left;
+                margin: 0 5px 0 0;
+            }
+        }
+        .hp {
+            margin: 10px 10px 0 0;
+            img {
+                width: 122px;
+                float: left;
+            }
+        }
+        .last {
+            img {
+                width: 240px;
+            }
+            .yellow-strip {
+                background: none repeat scroll 0 0 $yellow;
+                width: 240px !important;
+                margin: -65px 0 0 5px;
+            }
+            .hp {
+                margin: 10px 10px 0 0;
+                img {
+                    width: 122px;
+                    float: left;
+                }
+            }
+        }
+    }
+    .dmpu {
+        width: 480px
+    }
+    .desktop {
+        display: none
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1023px) {
+    #hero-one-dmpu {
+        width: 780px;
+        .hero {
+            width: 400px;
+            .section {}
+            img {
+                max-width: 400px;
+            }
+            .yellow-strip {
+                width: 400px;
+            }
+            h2 {}
+        }
+        .dmpu {
+            float: left;
+            width: 340px;
+        }
+    }
+}
+
+@media screen and (min-device-width: 1024px) {
+    #hero-one-dmpu {
+        width: 1000px;
+        .hero {
+            width: 660px;
+            .section {}
+            img {
+                max-width: 660px;
+            }
+            .blue-strip {}
+            h2 {}
+        }
+        .dmpu {
+            float: left;
+            width: 340px;
+        }
+        .desktop {
+            display: block;
+        }
+        .mobile {
+            display: none;
+        }
+    }
+}
