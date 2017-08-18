@@ -2,37 +2,40 @@
 // Title row
 //**
 #title-row {
-    display: table;
     width: 1000px;
-    margin-top: -35px;
+    text-align: center;
     .grey-block {
-        opacity: 0.04;
-        background: $black;
-        width: 450px;
+        background: #F6F6F6;
+        background-size: cover;
         height: 12px;
-        margin: 35px 0px;
+        margin: 16px 0px;
+        width: 1000px;
     }
-    .title {
-        display: table-cell;
-        vertical-align: middle;
-        min-width: 100px;
-        padding: 0 0 0 10px;
-        height: 60px;
-        h2 {
-            font-size: 28px;
-            font-family: $system-font-stack;
-            margin: 0 0 32px 0;
-        }
-        h2:after {
-            background: none repeat scroll 0 0 $yellow;
-            bottom: -10px;
-            content: "";
-            display: block;
-            height: 12px;
+    .white-block {
+        background: $white;
+        display: inline-block;
+        .title {
+            height: 35px;
+            padding: 0 20px 0 13px;
+            display: inline-block;
             position: relative;
-            width: 65px;
-            margin: -32px 10px 0 10px;
-            z-index: -99999;
+            bottom: 22px;
+            h2 {
+                font-size: 28px;
+                font-family: $system-font-stack;
+                text-align: center;
+            }
+            h2:after {
+                background: none repeat scroll 0 0 $yellow;
+                content: "";
+                display: block;
+                height: 12px;
+                position: relative;
+                bottom: 22px;
+                left: 7px;
+                z-index: 0;
+                mix-blend-mode: multiply;
+            }
         }
     }
 }
@@ -41,7 +44,7 @@
     #title-row {
         width: 720px;
         .grey-block {
-            width: 314px;
+            width: 720px;
         }
     }
 }
@@ -50,7 +53,7 @@
     #title-row {
         width: 480px;
         .grey-block {
-            width: 190px;
+            width: 480px;
         }
     }
 }

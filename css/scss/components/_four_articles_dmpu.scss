@@ -1,0 +1,111 @@
+//**
+// Hero with dmpu
+//**
+#four-articles-dmpu {}
+
+.main {
+    .hero-top {
+        img {
+            width: 480px;
+        }
+        .blue-strip {
+            background: none repeat scroll 0 0 #7199D7;
+            content: "";
+            display: block;
+            height: 140px;
+            position: relative;
+            width: 480px;
+            margin: -135px 10px 0 10px;
+            z-index: 0;
+            mix-blend-mode: multiply;
+        }
+        h2 {
+            font-size: 42px;
+            font-family: $system-font-stack;
+            font-weight: 600;
+            position: relative;
+            color: $white;
+            z-index: 1;
+            top: -14px;
+            left: 7px;
+            opacity: 1;
+            margin: -135px 10px 0 10px;
+            letter-spacing: 0.22px;
+            line-height: 45px;
+            text-shadow: 0 0 14px $black;
+            width: 460px;
+        }
+        .article-bottom {
+            width: 480px;
+            .image {
+                width: 160px;
+                padding: 20px 0;
+                img {
+                    width: 150px;
+                }
+            }
+            .text {
+                .section {
+                    opacity: 0.3;
+                    font-weight: 600;
+                    font-size: 17px;
+                    color: #000000;
+                    letter-spacing: 0.22px;
+                    text-transform: uppercase;
+                    padding: 18px 0 0 0;
+                    font-family: "Sanomat Sans";
+                }
+                h2 {
+                    font-size: 24px;
+                    color: #3A3A3A;
+                    letter-spacing: 0.11px;
+                    line-height: 26px;
+                    top: 0;
+                    left: 0;
+                    margin: 0;
+                    text-shadow: none;
+                    width: 320px;
+                    font-family: "Sanomat Sans";
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+.dmpu {
+    width: 480px;
+    .desktop {
+        display: none
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1023px) {
+    #four-articles-dmpu {}
+    .dmpu {
+        .desktop {
+            display: inline
+        }
+        .mobile {
+            display: none
+        }
+    }
+}
+
+@media screen and (min-device-width: 1024px) {
+    #four-articles-dmpu {
+        width: 1000px;
+        .main {
+            width: 660px;
+        }
+    }
+    .dmpu {
+        width: 480px;
+        .desktop {
+            display: inline
+        }
+        .mobile {
+            display: none
+        }
+    }
+}
