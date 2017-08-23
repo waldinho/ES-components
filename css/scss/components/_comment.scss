@@ -1,78 +1,91 @@
-// **
-// Comment row row
-// **
-#comment {
-    width: 1000px;
-    z-index: 99999;
-    background-color: #fafafa;
-    h1 {
-        font-size: 13px;
-        padding: 40px 50px 0px 55px;
-        color: #565856;
-        font-weight: bold;
-    }
-    .yellow-strip {
-        background: none repeat scroll 0 0 #F5A623;
-        content: "";
-        display: block;
-        height: 22px;
-        position: relative;
-        width: 195px;
-        margin: 0 10px 0 60px;
-        z-index: 0;
-        h2 {
-            font-size: 28px;
-            font-family: $system-font-stack;
-            position: relative;
-            z-index: 1;
-            top: -14px;
-            left: -7px;
-        }
-    }
-    p {
-        font-size: 24px;
-        line-height: 32px;
-        margin: 10px 10px 0 55px;
-        font-weight: bold;
-        width: 300px
-    }
-    .img {
-        line-height: 0;
-        background: url(../../img/comment-img.png) center center no-repeat;
-        width: 456px;
-        height: 283px;
-        background-size: cover;
-    }
-}
-
-@include responsive($small-break) {
+    // **
+    // Comment row row
+    // **
     #comment {
-        width: 480px;
-        .img {
-            width: 480px;
-        }
+        width: 1000px;
+        z-index: 99999;
+        background-color: #fafafa;
         h1 {
-            padding: 20px 0 0 20px;
-        }
-        p {
-            margin: 10px 10px 0 20px;
+            font-size: 13px;
+            padding: 40px 50px 0px 55px;
+            color: #565856;
+            font-weight: bold;
+            font-family: "Sanomat Sans";
         }
         .yellow-strip {
-            margin: 0 10px 0 20px;
-            left: 7px;
+            background: none repeat scroll 0 0 #F5A623;
+            content: "";
+            display: block;
+            height: 22px;
+            position: relative;
+            width: 195px;
+            margin: 0 10px 0 60px;
+            z-index: 0;
+            h2 {
+                font-size: 28px;
+                font-family: $system-font-stack;
+                position: relative;
+                z-index: 1;
+                top: -14px;
+                left: -7px;
+            }
         }
-        .img-gradient {
-            width: 480px;
-            height: 100px;
-            background: #fafafa;
-            /* For browsers that do not support gradients */
-            background: -webkit-linear-gradient(rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
-            /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
-            /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
-            /* For Firefox 3.6 to 15 */
-            background: linear-gradient(rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
+        p {
+            font-size: 24px;
+            line-height: 32px;
+            margin: 10px 10px 0 55px;
+            font-weight: bold;
+            width: 300px
+        }
+        .img {
+            line-height: 0;
+            background: url(../../img/comment-img.png) center center no-repeat;
+            width: 456px;
+            height: 283px;
+            background-size: cover;
         }
     }
-}
+    
+    @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+        #comment {
+            width: 725px;
+            .img {
+                width: 380px;
+            }
+            p {
+                width: 250px
+            }
+        }
+    }
+    
+    @include responsive($small-break) {
+        #comment {
+            width: 480px;
+            .img {
+                width: 480px;
+            }
+            h1 {
+                padding: 20px 0 0 20px;
+            }
+            p {
+                margin: 10px 10px 0 20px;
+            }
+            .yellow-strip {
+                margin: 0 10px 0 20px;
+                left: 7px;
+            }
+            .img-gradient {
+                width: 480px;
+                height: 100px;
+                background: #fafafa;
+                /* For browsers that do not support gradients */
+                background: -webkit-linear-gradient(rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
+                /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
+                /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
+                /* For Firefox 3.6 to 15 */
+                background: linear-gradient(rgb(250, 250, 250), transparent, transparent) 0% 0% / cover;
+            }
+        }
+    }

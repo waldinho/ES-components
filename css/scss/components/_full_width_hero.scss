@@ -1,0 +1,116 @@
+// **
+// Comment row row
+// **
+#full-width-hero {
+    width: 1000px;
+    height: 328px;
+    z-index: 99999;
+    background: url(../../img/full-width-img.png) center center no-repeat;
+}
+
+#full-width-hero::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to right, black 0%, transparent 20%);
+    height: 328px;
+    width: 100%;
+    content: '';
+}
+
+.text-full {
+    margin-top: -328px;
+    h1 {
+        padding: 100px 50px 0px 100px;
+        font-size: 16px;
+        color: #8932C3;
+        letter-spacing: 0.3px;
+        font-weight: bold;
+        font-family: "Sanomat Sans";
+        text-transform: uppercase;
+        position: relative;
+    }
+    .purple-strip {
+        background: none repeat scroll 0 0 #8932C3;
+        content: "";
+        display: block;
+        height: 115px;
+        position: relative;
+        width: 315px;
+        margin: -15px 10px 0 100px;
+        z-index: 0;
+        mix-blend-mode: multiply;
+    }
+    h2 {
+        font-family: $system-font-stack;
+        position: relative;
+        z-index: 1;
+        top: -115px;
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 0.22px;
+        line-height: 33px;
+        text-shadow: 0 0 14px #000000;
+        left: 100px;
+        width: 310px;
+    }
+    .star {
+        position: relative;
+        top: -145px;
+        left: 90px;
+        img {
+            margin: 0 -15px 0 0;
+        }
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    #full-width-hero {
+        width: 725px;
+        .img {
+            width: 380px;
+        }
+        p {
+            width: 250px
+        }
+    }
+}
+
+@include responsive($small-break) {
+    #full-width-hero {
+        background: url(../../img/full-width-img-mob.png) center center no-repeat;
+        width: 480px;
+        background-size: cover;
+        .img {
+            width: 480px;
+        }
+        h1 {
+            padding: 20px 0 0 20px;
+        }
+        p {
+            margin: 10px 10px 0 20px;
+        }
+        .yellow-strip {
+            margin: 0 10px 0 20px;
+            left: 7px;
+        }
+    }
+    .text-full {
+        h1 {
+            padding: 185px 50px 20px 20px;
+        }
+        .purple-strip {
+            margin: -15px 10px 0 10px;
+        }
+        h2 {
+            margin: 0 20px;
+            left: 0;
+        }
+        .star {
+            top: -125px;
+            left: 10px;
+        }
+    }
+    #full-width-hero::after {
+        background: none;
+    }
+}

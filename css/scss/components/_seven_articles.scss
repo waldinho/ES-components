@@ -1,0 +1,126 @@
+//**
+// Seven articles
+//**
+#seven-articles {
+    .article {
+        float: left;
+        font-family: $system-font-stack;
+        width: 323px;
+        margin: 0 15px 20px 0;
+        .blue-strip {
+            background: none repeat scroll 0 0 #7199D7;
+            content: "";
+            display: block;
+            height: 83px;
+            position: relative;
+            width: 323px;
+            margin: -91px 10px 0 10px;
+            z-index: 0;
+            mix-blend-mode: multiply;
+        }
+        h2 {
+            font-size: 20px;
+            font-family: $system-font-stack;
+            font-weight: 600;
+            position: relative;
+            color: $white;
+            z-index: 1;
+            top: -14px;
+            left: 7px;
+            opacity: 1;
+            margin: -70px 10px 0 10px;
+            letter-spacing: 0.14px;
+            line-height: 23px;
+            text-shadow: 0 0 14px $black;
+        }
+        img {
+            margin: 0 0 10px 0;
+            width: 323px;
+        }
+        &.last {
+            margin: 0 0 10px 0 !important;
+        }
+        .section {
+            font-size: 14px;
+            letter-spacing: 0.26px;
+        }
+        .headline {
+            font-size: 20px;
+            letter-spacing: 0.19px;
+            line-height: 23px;
+            margin: 0 20px 15px 0;
+        }
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    #seven-articles {
+        .article {
+            width: 237px;
+            margin: 0 8px 10px 0;
+            img {
+                width: 237px;
+            }
+            .blue-strip {
+                height: 63px;
+                width: 232px;
+                margin: -71px 10px 0 10px;
+            }
+            h2 {
+                font-size: 18px;
+                letter-spacing: 0.14px;
+                line-height: 21px;
+                margin: -59px 10px 0 10px;
+            }
+            &.last {
+                margin: 0 0 18px 0 !important;
+            }
+            .section {
+                font-size: 12px;
+                letter-spacing: 0.22px;
+            }
+            .headline {
+                font-size: 16px;
+                letter-spacing: 0.19px;
+                line-height: 19px;
+                margin: 0 20px 0 0;
+            }
+        }
+    }
+}
+
+@include responsive($small-break) {
+    #seven-articles {
+        width: 480px;
+        .article {
+            width: 480px;
+            margin: 0;
+            img {
+                width: 480px;
+            }
+            .blue-strip {
+                height: 63px;
+                width: 480px;
+                margin: -71px 10px 10px 10px;
+            }
+            h2 {
+                font-size: 23.28px;
+                letter-spacing: 0.16px;
+                line-height: 28.13px;
+                margin: -59px 10px 0 10px;
+            }
+            .section {
+                font-size: 14px;
+                letter-spacing: 0.3px;
+            }
+            .headline {
+                font-size: 20px;
+                letter-spacing: 0.14px;
+                line-height: 24px;
+            }
+        }
+        .last {
+            margin: 0 0 20px 0;
+        }
+    }
+}
