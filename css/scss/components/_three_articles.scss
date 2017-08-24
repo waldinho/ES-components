@@ -1,0 +1,83 @@
+//**
+// Title row
+//**
+#three-articles {    
+    .article {
+        float: left;
+        font-family: $system-font-stack;
+        width: 323px;
+        margin: 0 15px 20px 0;
+        img {
+            margin: 0 0 10px 0;
+            width: 323px;
+        }
+        &.last {
+            margin: 0 0 10px 0 !important;
+        }
+        .section {
+            font-size: 14px;
+            letter-spacing: 0.3px;
+        }
+        .headline {
+            font-size: 24px;
+            line-height: 1.17;
+            letter-spacing: 0.2px;
+            margin: 0 20px 0 0;
+        }
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    #three-articles {
+        .article {
+            width: 237px;
+            margin: 0 8px 10px 0;
+            img {
+                width: 237px;                
+            }
+
+            &.last {
+                margin: 0 0 18px 0 !important;
+            }
+
+            .section {
+                font-size: 12px;
+                letter-spacing: 0.22px;
+            }
+            .headline {
+                font-size: 16px;
+                line-height: 1.19;
+                letter-spacing: 0.2px;
+            }
+        }
+    }
+}
+
+@include responsive($small-break) {
+    #three-articles {
+        width: 350px;
+        .article {
+            width: 350px;
+            margin: 0px 0px 20px 0px;
+            img {
+                width: 170px;
+                float: left;
+                margin-right: 8px;
+            }
+
+            .section {
+                font-size: 14px;
+                letter-spacing: 0.3px;
+            }
+
+            .headline {
+                font-size: 20px;
+                line-height: 1.15;
+                letter-spacing: 0.2px;
+            }
+        }        
+        .last {
+            margin: 0 0 20px 0;            
+        }
+    }
+}

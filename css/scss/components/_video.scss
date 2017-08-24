@@ -1,0 +1,156 @@
+//**
+// Title row
+//**
+#video {
+    width: 1000px;
+    background: rgba(0, 0, 0, 0.05);
+    .videos {
+        width: 860px;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    .camera {
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+    .section {
+        opacity: 0.42;
+        font-family: "Sanomat Sans";
+        font-weight: 600;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.13px;
+        margin: 0 0 10px 0;
+        font-weight: 600;
+    }
+    .main {
+        float: left;
+        padding: 0 20px 0 0;
+        width: 682px;
+        .headline {
+            opacity: 0.8;
+            font-family: "Sanomat Sans";
+            font-size: 20px;
+            color: #000000;
+            letter-spacing: 0.26px;
+            text-shadow: none;
+            top: 10px;
+            left: 0px;
+        }
+        .read-full {
+            opacity: 0.52;
+            font-family: "Sanomat Sans";
+            font-size: 12px;
+            color: #000000;
+            letter-spacing: 0.16px;
+            text-transform: uppercase;
+            margin: 15px 0 0 0;
+            font-weight: 600;
+        }
+    }
+    .small {
+        float: left;
+        width: 152px;
+        padding: 0px;
+        margin: 0px;
+        height: 110px;
+    }
+    .strip {
+        width: 152px;
+        background: none repeat scroll 0 0 #5D5D5D;
+        content: "";
+        display: block;
+        height: 45px;
+        position: relative;
+        margin: -45px 10px 0 10px;
+        z-index: 0;
+        mix-blend-mode: multiply;
+    }
+    .headline {
+        font-family: "Sanomat Sans";
+        font-size: 13px;
+        line-height: 15px;
+        color: #FFFFFF;
+        letter-spacing: 0.28px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+        position: relative;
+        top: -45px;
+        left: 15px;
+        font-weight: 600;
+        margin: 0 5px 0 0;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    #video {
+        width: 725px;
+        .videos {
+            width: 700px;
+        }
+        .main {
+            width: 540px;
+            img {
+                width: 520px;
+            }
+            .headline {
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+@include responsive($small-break) {
+    #video {
+        width: 480px;
+        .videos {
+            width: 460px;
+        }
+        .main {
+            width: 460px;
+            img {
+                width: 460px;
+            }
+            .headline {
+                line-height: 24px;
+            }
+        }
+        .small {
+            float: left;
+            width: 230px;
+            padding: 20px 0px;
+            margin: 20px 0px;
+            img {
+                width: 215px;
+            }
+        }
+        .strip {
+            width: 215px;
+            height: 45px;
+            margin: -45px 10px 0 10px;
+            mix-blend-mode: multiply;
+        }
+        .right-side {
+            width: 230px !important;
+            margin-top: 40px;
+            img {
+                width: 225px !important;
+            }
+            .strip {
+                width: 220px;
+                height: 45px;
+                margin: -49px 10px 0 12px;
+                mix-blend-mode: multiply;
+            }
+        }
+        .first {
+            margin-top: 50px;
+        }
+    }
+    .headline {
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.28px;
+        top: -45px;
+        left: 15px;
+    }
+}

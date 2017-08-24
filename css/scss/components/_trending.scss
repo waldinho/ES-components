@@ -1,0 +1,99 @@
+//**
+// Title row
+//**
+#trending {
+    width: 1000px;
+    background: rgba(0, 0, 0, 0.05);
+    .trending-stories {
+        width: 860px;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    .arrow {
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+    .section {
+        opacity: 0.42;
+        font-family: "Sanomat Sans";
+        font-weight: 600;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.13px;
+        margin: 0 0 10px 0;
+        font-weight: 600;
+    }
+    .story {
+        float: left;
+        width: 177px;
+    }
+    .headline {
+        font-family: "Sanomat Sans";
+        font-size: 16px;
+        color: #3A3A3A;
+        letter-spacing: 0.13px;
+        line-height: 18px;
+        width: 140px;
+        margin: 10px 0 30px 0;
+        font-weight: 600;
+    }
+    .last {
+        margin-right: 0px;
+        width: 152px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    #trending {
+        width: 725px;
+        .trending-stories {
+            width: 660px;
+            margin: 0 auto;
+            .story {
+                width: 136px;
+                img {
+                    width: 116px;
+                }
+            }
+            .headline {
+                width: 116px;
+                font-size: 14px;
+                letter-spacing: 0.13px;
+                line-height: 15px;
+                margin: 10px 0 30px 0;
+            }
+            .last {
+                width: 116px;
+            }
+        }
+    }
+}
+
+@include responsive($small-break) {
+    #trending {
+        width: 480px;
+        .trending-stories {
+            width: 382px;
+            margin: 0 auto;
+            .story {
+                width: 201px;
+                img {
+                    width: 171px;
+                }
+            }
+            .headline {
+                width: 171px;
+                font-size: 16px;
+                letter-spacing: 0.13px;
+                line-height: 18px;
+                margin: 10px 0 25px 0;
+                min-height: 75px;
+            }
+            .right-side {
+                position: relative;
+                top: 35px;
+                width: 171px;
+            }
+        }
+    }
+}

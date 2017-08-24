@@ -1,0 +1,77 @@
+//**
+// Title row
+//**
+#twelve-articles {
+    .articles{
+        font-family: $system-font-stack;
+        width: 238px;
+        margin: 0 16px 20px 0;
+        float: left;
+        &.last {
+            margin: 0 0 10px 0 !important;
+        }
+
+        .article {                    
+            padding-bottom: 15px;
+            &:first-child {
+                border-bottom: 12px solid #f2f2f2;
+                padding: 15px 0px;
+                margin-bottom: 15px;
+            }
+            .section {
+                font-size: 12px;            
+                letter-spacing: 0.2px;
+            }
+            .headline {
+                font-size: 18px;
+                line-height: 1.22;
+                letter-spacing: 0.2px;
+                margin: 0 20px 0 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    #twelve-articles {
+        .articles {
+            width: 176px;
+            margin: 0 8px 20px 0;
+            &.last {
+                margin: 0 0px 5px 0;
+            }
+            .article {
+                img {
+                    width: 178px;
+                }
+                .section {
+                    font-size: 12px;
+                    letter-spacing: 0.22px;
+                }
+                .headline {
+                    font-size: 16px;
+                    letter-spacing: 0.17px;
+                    line-height: 18px;
+                }
+            }
+        }        
+    }
+}
+
+@include responsive($small-break) {
+    #twelve-articles {
+        .articles {
+            width: 173px;
+            margin: 0 6px 20px 0;
+            &.last {
+                margin: 0 0px 5px 0;
+            }
+            .article {
+                img {
+                    width: 173px;
+                }
+                
+            }            
+        }
+    }
+}

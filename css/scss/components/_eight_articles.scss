@@ -1,0 +1,71 @@
+//**
+// Title row
+//**
+#eight-articles {    
+    .articles {
+        float: left;
+        font-family: $system-font-stack;
+        width: 492px;
+        margin: 0 16px 20px 0;
+        &.last {
+            margin-right: 0px;
+        }
+        .article {   
+            .section {
+                font-size: 14px;
+                letter-spacing: 0.3px;
+            }
+            .headline {
+                font-size: 24px;
+                line-height: 1.12;
+                letter-spacing: 0.2px;
+                margin: 0 20px 16px 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    #eight-articles {
+        .articles {
+            width: 360px;
+            margin: 0 8px 10px 0;
+            &.last {
+                margin: 0 0 18px 0 !important;
+            }
+            .article {
+                .section {
+                    font-size: 14px;
+                    letter-spacing: 0.3px;
+                }
+                .headline {
+                    font-size: 20px;
+                    line-height: 1.15;
+                }
+            }
+            
+            
+        }
+    }
+}
+
+@include responsive($small-break) {
+    #eight-articles {
+        .articles {
+            width: 353px;
+            margin: 0px;            
+            
+            .article {                
+                .section {
+                    font-size: 14px;
+                    letter-spacing: 0.3px;
+                }
+                .headline {
+                    font-size: 20px;                    
+                    line-height: 1.15;
+                    letter-spacing: 0.2px;
+                }
+            }
+        }
+    }
+}

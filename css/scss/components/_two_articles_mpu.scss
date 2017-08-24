@@ -1,0 +1,120 @@
+//**
+// Title row
+//**
+#two-articles-mpu {    
+    .mpu {            
+        float: left;
+        width: 320px;
+        margin: 0 15px 20px 0;
+        .img {
+            width: 300px;
+            margin: 0 auto;
+            img {
+                box-shadow: 8px 8px 0px #4990e2;            
+            }
+        }
+        &.last {
+            margin: 0 0px 20px 0;
+        }
+    }
+
+    .articles { 
+        float: left;
+        .article {
+            float: left;
+            font-family: $system-font-stack;
+            width: 320px;
+            margin: 0 15px 20px 0;
+            img {
+                margin: 0 0 10px 0;
+                width: 320px;
+            }
+            &.last {
+                margin: 0 0 10px 0 !important;
+            }
+            .section {
+                font-size: 14px;
+                letter-spacing: 0.3px;
+            }
+            .headline {
+                font-size: 24px;
+                line-height: 1.17;
+                letter-spacing: 0.2px;
+                margin: 0 20px 0 0;
+            }    
+        }
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    #two-articles-mpu {
+        .mpu {
+            .img {
+                width: 300px;
+                margin: 0 auto;
+                img {
+                    width: 300px;
+                }
+            }   
+        }
+        .articles {
+            width: 360px;
+            margin: 0 0px 10px 0;
+            .article {
+                width: 360px;                
+                img {
+                    width: 177px;
+                    float: left;
+                    margin-right: 8px;
+                }
+    
+                &.last {
+                    margin: 0 0 18px 0 !important;
+                }
+    
+                .section {
+                    font-size: 14px;
+                    letter-spacing: 0.3px;
+                }
+                .headline {
+                    font-size: 24px;
+                    line-height: 1.17;
+                    letter-spacing: 0.2px;
+                }
+            }
+        }        
+    }
+}
+
+@include responsive($small-break) {
+    #two-articles-mpu {
+        .mpu {
+            width: 353px;
+        }
+        .articles {
+            .article {
+                width: 353px;
+                margin: 0px 0px 20px 0px;
+                img {
+                    width: 173px;
+                    float: left;
+                    margin-right: 8px;
+                }
+
+                .section {
+                    font-size: 14px;
+                    letter-spacing: 0.3px;
+                }
+
+                .headline {
+                    font-size: 24px;
+                    line-height: 1.17;
+                    letter-spacing: 0.2px;
+                }
+            }        
+            .last {
+                margin: 0 0 20px 0;            
+            }
+        }    
+    }
+}
