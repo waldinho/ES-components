@@ -1,1 +1,3 @@
 # ES-components
+
+Sass template
